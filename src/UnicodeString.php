@@ -42,20 +42,20 @@ class UnicodeString implements Countable, ArrayAccess, JsonSerializable
     /**
      * @var int[]
      */
-    private array $codes;
+    private $codes;
 
     /**
      * @var string[]|null
      */
-    private ?array $chars = null;
-    private int $length;
-    private ?string $str = null;
-    private ?array $cache = null;
+    private $chars = null;
+    private $length;
+    private $str = null;
+    private $cache = null;
 
     /**
      * @var int[][]
      */
-    private static array $maps = [];
+    private static $maps = [];
 
     /**
      * @param int[] $codes
